@@ -5,7 +5,7 @@ main(List<String> args) {
   String name = "Emre";
 
   print(name);
-  // print içerisinde String olmayan bir değişkeni yazdırmak istersek tip dönüşümü olan toString kulllanılmalı.
+  // print içerisinde string verisi ile String olmayan bir değişkeni yazdırmak istersek tip dönüşümü olan toString kulllanılmalı.
   print(name + "'nin yaşı " + yas.toString());
 
   //boolean veri tipi degiskenin true (doğru) veya false (yanlış) olduğunu tutar.
