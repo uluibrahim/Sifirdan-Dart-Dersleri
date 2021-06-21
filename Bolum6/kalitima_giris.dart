@@ -7,6 +7,7 @@
  */
 
 main(List<String> args) {
+  /**
   // user
   User user1 = User();
   user1.email;
@@ -28,6 +29,32 @@ main(List<String> args) {
   user3.girisYap();
   user3.davetEt();
   user3.oku();
+
+
+   */
+
+  // normal nesne tanımlamaları
+  User user1 = User();
+  NormalUser user2 = NormalUser();
+  var user3 = SadeceOkuyabilenUser();
+  AdminUser user4 = AdminUser();
+
+  // upcasting yukarı cevrim
+  User user5 = AdminUser();
+
+  List<User> tumUserlar = [];
+  tumUserlar.add(user1);
+  tumUserlar.add(user2);
+  tumUserlar.add(user3);
+  tumUserlar.add(user4);
+
+  test(user1);
+  test(user2);
+}
+
+void test(User user) {
+  // polimorfizm (çok biçimlilik)
+  user.girisYap();
 }
 
 class User {
@@ -42,6 +69,11 @@ class User {
 class NormalUser extends User {
   void davetEt() {
     print("Normal user davet etti");
+  }
+
+  @override
+  void girisYap() {
+    print("Normal user giriş yaptı");
   }
 }
 
