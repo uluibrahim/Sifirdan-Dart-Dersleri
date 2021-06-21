@@ -9,6 +9,11 @@ main(List<String> args) {
    */
 
   Araba opel = Araba("Opel", 2020, false);
+
+
+  // isimlendirilmiş constructor kullanımı
+
+  Araba audi=Araba.markasizConstructor(2021, true);
 }
 
 class Araba {
@@ -47,5 +52,12 @@ class Araba {
     print("Kurucu (constructor) method çalıştı");
   }
 
-  //NOT: BİR CLASS TA 1 DEN FAZLA KURUCU METHOD KULLANILAMAZ
+  //NOT: BİR CLASS TA 1 DEN FAZLA İSİMLENDİRİLMEMİŞ KURUCU METHOD KULLANILAMAZ
+
+
+  // İSİMLENDİRİLMİŞ CONSTRUCTOR KULLANIMI
+
+  Araba.markasizConstructor(this.modelYili,this.otomatikMi){
+    print("Model : $modelYili, otomatik mi: $otomatikMi");
+  }
 }
