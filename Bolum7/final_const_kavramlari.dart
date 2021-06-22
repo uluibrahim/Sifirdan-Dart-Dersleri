@@ -4,6 +4,11 @@
  * İki kavramın farkı
  * Final: değer atandıktan sonra bellekte yer ayrılması sadece erişilirse olmakta
  * 
+ * Const: bu aslında final dir ama derleme anında değer atanır ve bellekte yeri ayrılır , hiç kullanılmasa bile
+ * Veri tipide içindeki değerde sonradan değiştirilemez
+ * 
+ * En önemli farkı ise instance değişkenler sadece final olarak tanımlanır, const ile tanımlanmaz
+ *  Const ile tanımlanabilmesi için static olması
  */
 
 //IMMUTABLE DEĞİŞTİRİLEMEZ
