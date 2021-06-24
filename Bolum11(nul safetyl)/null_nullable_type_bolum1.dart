@@ -12,5 +12,5 @@ main(List<String> args) {
   a=null;
   //print(a+2); // null ile int toplanamadığından hata alınır
 
-  
+
 }
